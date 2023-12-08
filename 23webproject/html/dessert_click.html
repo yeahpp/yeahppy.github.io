@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">  
+   <!--오래된 버전의 브라우저까지 모두 지원한다. -->
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>예린이의 메뉴판</title>
+  <link rel="stylesheet" href="../css/mystyle.css">
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+
+
+  <style>
+   
+     body { 
+        background-image: url("../image/menu_page.JPG"); 
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-attachment: fixed; /*속성은 배경 이미지의 고정 여부를 설정합니다.*/
+        background-position: center center;
+        overflow: hidden;
+        height: 100%;/*pc에서 스크롤이 안되게함 */ 
+        font-family:  cursive;
+        
+     }
+     
+
+  a { 
+        text-decoration-line: none; /*밑줄 없음을 설정*/
+	}
+
+	a:hover {
+		color: gray; /*커서만 놓는 과정의 색깔을 지정*/
+	}
+
+	a:active {
+		color: gray; /*누르는 과정의 색깔 지정*/
+	}
+
+
+	
+	.item_style {
+		font-size: 50px;
+		margin-bottom: 10px;
+        font-weight: bold;
+        color: black;
+	}
+
+
+
+	.한식 {
+    position: fixed;
+    left: 280px;
+    bottom: 230px;
+    
+	}
+
+	.양식 {
+    
+    position: fixed;
+    left: 280px;
+    bottom: 160px;
+    
+
+	}
+
+	.일식 {
+    position: fixed;
+    left: 280px;
+    bottom: 90px;
+               
+
+	}
+
+	.게시판 {
+    position: fixed;
+    left: 280px;
+    bottom: 25px;
+
+	}
+    .d-image {
+        position: fixed;
+            width:645px;
+		    height:auto;
+		    bottom:0px;
+		    right:270px;
+			}
+    img:hover{
+        opacity: 0.4;
+    }
+  </style>
+</head>
+
+
+<body bgcolor="#9494b8"  > <!--#ffff99-->
+
+    <a href="../../34_board.php" onclick="alert('-최신 업데이트 공지- 2023.06.06~07.16동안 디저트 관련 웹페이지가 새롭게 리뉴얼 되어 돌아옵니다. 이용에 불편을 끼처드려서 죄송합니다.')">
+        <img src="../image/m_cake.png" alt="펜케이크그림" class="d-image">
+    </a>
+
+<div>
+    <a href="korea_click.html" class="item_style 한식 ">한식</a><br>
+    <a href="america_click.html" class="item_style 양식">양식</a><br>
+    <a href="japan_click.html" class="item_style 일식">일식</a><br>
+    <a href="../../34_board.php" class="item_style 게시판">게시판</a><br>
+</div>
+
+
+</body>
+</html>

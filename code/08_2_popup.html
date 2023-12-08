@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script language="javascript">
+        function moveClose() {
+          opener.location.href="회원가입.html";
+          self.close();
+        }
+        </script>
+</head>
+<body onload="window.resizeTo(400,200)">
+    <h1>POPUP !!</h1>
+    <input type="button" value="닫 기" onclick="self.close();" />
+    <input type="button" value="처음 창으로 돌아가기" onclick="moveClose();" />
+</body>
+</html>

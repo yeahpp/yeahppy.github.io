@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--오래된 버전의 브라우저까지 모두 지원한다. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>예린이의 메뉴판</title>
+    <style>
+        body {
+            background-image: url("../image/menu_page.JPG");
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-attachment: fixed;
+            /*속성은 배경 이미지의 고정 여부를 설정합니다.*/
+            background-position: center center;
+            overflow: hidden;
+            height: 100%;
+            /*pc에서 스크롤이 안되게함 */
+            font-family: cursive, sans-serif;
+        }
+
+        .logout {
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            font-size: 20px;
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            background-color: #ddaa88;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .logout:hover {
+            background-color: #cc9966;
+        }
+
+        a {
+            text-decoration-line: none;
+            /*밑줄 없음을 설정*/
+        }
+
+        a:hover {
+            color: gray;
+            /*커서만 놓는 과정의 색깔을 지정*/
+        }
+
+        a:active {
+            color: gray;
+            /*누르는 과정의 색깔 지정*/
+        }
+
+        .item_style {
+            font-size: 50px;
+            margin-bottom: 10px;
+            font-weight: bold;
+            color: black;
+        }
+
+        .한식 {
+            position: fixed;
+            left: 280px;
+            bottom: 230px;
+        }
+
+        .양식 {
+            position: fixed;
+            left: 280px;
+            bottom: 160px;
+        }
+
+        .일식 {
+            position: fixed;
+            left: 280px;
+            bottom: 90px;
+        }
+
+        .디저트 {
+            position: fixed;
+            left: 280px;
+            bottom: 25px;
+        }
+
+        .e-image {
+            position: fixed;
+            width: 645px;
+            height: auto;
+            bottom: 0px;
+            right: 270px;
+        }
+
+        .link_position {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .link_position a {
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: #ddaa88;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .link_position a:hover {
+            background-color: #cc9966;
+        }
+
+        .link_position {
+            position: relative;
+            top: 15px;
+            left: 550px;
+        }
+    </style>
+</head>
+
+<body bgcolor="#9494b8"> <!--#ffff99-->
+
+    <img src="../image/m_empty.png" alt="빈 도마" class="e-image">
+
+    <div>
+
+        <a href="korea_click.html" class="item_style 한식 ">한식</a><br>
+        <a href="america_click.html" class="item_style 양식">양식</a><br>
+        <a href="japan_click.html" class="item_style 일식">일식</a><br>
+        <a href="../../34_board.php" class="item_style 디저트">게시판</a><br>
+
+    </div>
+
+    <a href="../../logout.php" class="logout">로그아웃</a>
+
+</body>
+
+</html>
